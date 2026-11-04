@@ -355,20 +355,3 @@ For questions, suggestions or feedback, please open an issue in this GitHub repo
 ---
 
 **LearnFlex — Your learning journey, your pace.**
-
-## Verified limitations
-
-- The 10,560 figure is the number of generated question entries, not 10,560 independently authored or educator-validated questions. See `docs/CURRICULUM-QUALITY-REPORT.md` for the current prompt and prerequisite coverage snapshot.
-- Explicit prerequisite links cover a limited, selected Mathematics and Science sequence only. A missing link must not be interpreted as proof that no prerequisite exists.
-- Prerequisite recommendations are labelled as possible gaps and rely on recorded assessment evidence. Unassessed prerequisites are suggested for checking, not diagnosed as weak.
-- Offline support is implemented through caching, IndexedDB packs and an outbox, but the full workflow must still be tested on the target browser and device.
-- LearnFlex is a demonstration, not a legal DPDP compliance certification or a production student-information system.
-- Before public deployment, configure private demo passwords, confirm the deployment domain, review contact information, and complete an independent security/privacy review.
-
-## Round 3 verification and security notes
-
-- Run `npm run audit:content` to inspect all persisted question objects and generate the duplicate-prompt review CSV. Structural completeness is not academic approval.
-- Run `npm run test:round3` for adaptive-routing and authentication/isolation regressions.
-- Public teacher self-registration is blocked. Student registration requires an administrator-configured school invitation code; the server does not trust student-supplied school, class or section values.
-- In production, configure a unique `LEARNFLEX_DEMO_TEACHER_PASSWORD` (16+ characters) in the hosting secret manager and configure school-issued `LEARNFLEX_STUDENT_INVITES`. No teacher secret or active invitation code belongs in Git.
-- Review `docs/SECURITY-VALIDATION.md`, `docs/ACCESSIBILITY-AND-DEVICE-VALIDATION.md`, and `docs/ROUND3-IMPLEMENTATION-AND-REMAINING-WORK.md` before any school pilot.
