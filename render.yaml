@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: learnflex
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    disk:
+      name: learnflex-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: LEARNFLEX_DATA_DIR
+        value: /var/data
+      - key: LEARNFLEX_RETENTION_DAYS
+        value: "365"
+      - key: LEARNFLEX_DEMO_TEACHER_PASSWORD
+        sync: false
+      - key: LEARNFLEX_STUDENT_INVITES
+        sync: false

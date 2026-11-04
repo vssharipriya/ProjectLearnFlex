@@ -1,0 +1,22 @@
+{
+  "name": "learnflex",
+  "version": "4.0.0",
+  "private": true,
+  "description": "LearnFlex — CBSE Classes 6–10 adaptive learning demo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check app.js && node --check app-enhancements.js && node --check quality-upgrades.js && node --check curriculum.js && node --check ncert-curriculum.js && node --check adaptive-engine.js && node --check server.js && node --check sw.js && node --check tests/smoke-test.js && node --check tests/browser-smoke.js && node --check offline-manager.js && node --check tests/offline-test.js && node --check tests/features-round3-test.js && node --check tests/prerequisite-graph-audit.js && node --check tests/content-quality-audit.js",
+    "test": "node tests/smoke-test.js",
+    "test:round3": "node tests/features-round3-test.js",
+    "test:browser": "node tests/browser-smoke.js",
+    "test:all": "npm run check && npm test && npm run test:prerequisites && npm run test:offline && npm run audit:content",
+    "test:offline": "node tests/offline-test.js",
+    "audit:round3": "node tests/round3-readiness-audit.js",
+    "test:prerequisites": "node tests/prerequisite-graph-audit.js",
+    "audit:content": "node tests/content-quality-audit.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}

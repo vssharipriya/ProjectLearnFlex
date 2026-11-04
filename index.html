@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LearnFlex — CBSE Classes 6–10 Adaptive Learning Platform</title>
+<meta name="description" content="LearnFlex is an adaptive learning and formative assessment platform for CBSE Classes 6 to 10. Includes 528 CBSE/NCERT chapter and activity modules, original practice drafts, confidence-aware adaptive practice, progressive hints, and downloadable offline learning packs.">
+<meta name="keywords" content="CBSE Class 10 Mathematics, CBSE Class 9 Science, CBSE Class 8 Social Studies, adaptive learning platform, NCERT curriculum 2026-27, CBSE practice questions, personalised learning, misconception diagnosis, offline educational app, child data privacy, DPDP Act 2023">
+<meta name="author" content="LearnFlex project team">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://learnflex.onrender.com/">
+
+<!-- Open Graph / Social Media Metadata -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LearnFlex">
+<meta property="og:title" content="LearnFlex — CBSE Classes 6–10 Adaptive Learning Platform">
+<meta property="og:description" content="Personalised, explainable adaptive learning for CBSE students in Classes 6–10. 528 CBSE/NCERT chapter and activity modules, confidence-aware practice, prerequisite links for selected concepts, and offline learning packs.">
+<meta property="og:url" content="https://learnflex.onrender.com/">
+<meta property="og:image" content="https://learnflex.onrender.com/assets/learning-background.png">
+<meta property="og:locale" content="en_IN">
+<meta property="og:locale:alternate" content="te_IN">
+<meta property="og:locale:alternate" content="hi_IN">
+
+<!-- Twitter Card Metadata -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LearnFlex — CBSE Classes 6–10 Adaptive Learning Platform">
+<meta name="twitter:description" content="Personalised adaptive practice for CBSE Classes 6–10, with confidence-aware question selection and selected chapter review links.">
+<meta name="twitter:image" content="https://learnflex.onrender.com/assets/learning-background.png">
+
+<!-- Fonts, Icons & Manifest -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#236b55">
+<link rel="stylesheet" href="styles.css">
+
+<!-- Structured Data: Organization & WebSite (SEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "EducationalOrganization",
+      "@id": "https://learnflex.onrender.com/#organization",
+      "name": "LearnFlex",
+      "url": "https://learnflex.onrender.com/",
+      "logo": "https://learnflex.onrender.com/assets/learning-background.png",
+      "description": "Adaptive learning and continuous formative assessment platform tailored for CBSE Classes 6 to 10, aligned with NCERT 2026-27 editions.",
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": ["Student", "Teacher", "Administrator"],
+        "audienceType": "CBSE School Cohorts (Classes 6-10)"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://learnflex.onrender.com/#software",
+      "name": "LearnFlex",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web browser; Progressive Web App features where supported",
+      "description": "A CBSE/NCERT-aligned adaptive learning demonstration for Classes 6–10 with deterministic practice routing and offline learning-pack support.",
+      "url": "https://learnflex.onrender.com/",
+      "publisher": { "@id": "https://learnflex.onrender.com/#organization" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://learnflex.onrender.com/#website",
+      "url": "https://learnflex.onrender.com/",
+      "name": "LearnFlex",
+      "publisher": { "@id": "https://learnflex.onrender.com/#organization" },
+      "inLanguage": ["en-IN", "te-IN", "hi-IN"]
+    },
+    {
+      "@type": "Course",
+      "name": "CBSE Classes 6–10 Adaptive Curriculum & Question Bank",
+      "description": "Comprehensive NCERT-aligned curriculum across Mathematics, Science, Social Studies, English, Hindi, Sanskrit, and vocational activity modules.",
+      "provider": { "@id": "https://learnflex.onrender.com/#organization" },
+      "educationalLevel": "Secondary School (Classes 6-10)",
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "Blended / Offline PWA",
+        "inLanguage": "en"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://learnflex.onrender.com/#faq-schema",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is adaptive learning in LearnFlex?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Adaptive learning in LearnFlex dynamically adjusts question difficulty between Foundation, Reinforcement, Standard, and Challenge tiers using a student's real-time answer accuracy and reported confidence level. It rebuilds prerequisites when errors occur and increases challenge when concepts are mastered."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which CBSE classes and subjects does LearnFlex support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "LearnFlex provides a CBSE/NCERT-aligned catalogue of 528 chapter and activity modules across Classes 6–10. Subject and language offerings vary by class and school; activity modules are not represented as textbook chapters. Educator review is required for curriculum alignment and generated practice content."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does LearnFlex identify and diagnose weak chapters?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The platform validates submitted answers against the question bank and can attach option-specific feedback where a mapping exists. Some generated mappings are heuristic practice prompts and must be reviewed by a subject teacher; an incorrect option alone is not proof of a learner misconception."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does LearnFlex use generative AI to generate questions or evaluate students?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. LearnFlex deliberately uses original generated practice drafts associated with 528 CBSE/NCERT chapter and activity modules, plus deterministic rule-based adaptive logic. The practice drafts require subject-teacher review; deterministic logic makes selection decisions explainable but does not guarantee factual accuracy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can LearnFlex be used without an active internet connection?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The PWA includes IndexedDB learning packs and an offline progress outbox with reconnect synchronization. Availability depends on a successful first load, browser storage, service-worker support and a prior content download. End-to-end device and network validation is still required before a school pilot."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is student privacy protected under India's DPDP Act 2023?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "LearnFlex includes role-based authentication, teacher class/school/section checks, student-scoped APIs and a consent-status-gated pilot evidence workflow. The workflow does not verify guardian signatures and the application is not certified as DPDP-compliant. School privacy review, approved consent/assent, retention checks and production security review are required before real student use."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div id="toast" class="toast"></div>
+
+<!-- ========================================================================
+     PUBLIC WEBSITE VIEW (SEO, AEO, GEO, Curriculum Explorer & Information)
+     ======================================================================== -->
+<div id="publicView" class="public-portal">
+  <!-- Public Sticky Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a class="brand" href="#home" onclick="showPublicSection('home')">
+        <span class="brand-mark">L</span>
+        <span>learn<span class="brand-accent">flex</span></span>
+      </a>
+      <nav>
+        <ul class="nav-menu" id="publicNavMenu">
+          <li><a class="nav-link" href="#about" onclick="showPublicSection('about')">About</a></li>
+          <li><a class="nav-link" href="#features" onclick="showPublicSection('features')">Features</a></li>
+          <li><a class="nav-link" href="#how-it-works" onclick="showPublicSection('how-it-works')">How It Works</a></li>
+          <li><a class="nav-link" href="#adaptive-engine" onclick="showPublicSection('adaptive-engine')">Adaptive Engine</a></li>
+          <li><a class="nav-link" href="#curriculum" onclick="showPublicSection('curriculum')">CBSE Curriculum</a></li>
+          <li><a class="nav-link" href="#benefits" onclick="showPublicSection('benefits')">Benefits</a></li>
+          <li><a class="nav-link" href="#faq" onclick="showPublicSection('faq')">FAQ</a></li>
+          <li><a class="nav-link" href="#contact" onclick="showPublicSection('contact')">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn soft small" type="button" onclick="openPublicRole('student')">Student Portal</button>
+        <button class="btn ghost small" type="button" onclick="openPublicRole('teacher')">Teacher Portal</button>
+        <button class="btn primary small" type="button" onclick="openPublicRegister()">Register</button>
+        <button class="mobile-nav-toggle" type="button" onclick="toggleMobileNav()" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-badge"><span class="pulse"></span> CBSE CLASSES 6–10 · NCERT-ALIGNED ADAPTIVE LEARNING</div>
+      <h1 class="hero-title">Personalised learning that<br><em>moves with every student.</em></h1>
+      <p class="hero-desc">LearnFlex uses answer and confidence signals to flag topics for review, offers mapped prerequisite checks where available, and adapts practice across 528 CBSE/NCERT catalogue modules.</p>
+      <div class="hero-cta-group">
+        <button class="btn primary" type="button" onclick="openPublicRole('student')">Launch Student Portal <span>→</span></button>
+        <button class="btn soft" type="button" onclick="openPublicRole('teacher')">Teacher Workspace <span>✎</span></button>
+        <a class="btn ghost" href="#curriculum" onclick="showPublicSection('curriculum')">Explore 528 CBSE Chapters <span>↓</span></a>
+      </div>
+      <div class="hero-stats-row">
+        <div class="hero-stat-card">
+          <b>528</b>
+          <span>NCERT Modules</span>
+          <small>Classes 6 to 10 catalog</small>
+        </div>
+        <div class="hero-stat-card">
+          <b>10,560</b>
+          <span>Generated Practice Entries</span>
+          <small>20 draft entries per module; educator review pending</small>
+        </div>
+        <div class="hero-stat-card">
+          <b>4 Tiers</b>
+          <span>Adaptive Framework</span>
+          <small>Foundation to Challenge</small>
+        </div>
+        <div class="hero-stat-card">
+          <b>Offline Support</b>
+          <span>PWA Resilience</span>
+          <small>Downloaded packs and queued progress</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About LearnFlex Section -->
+  <section id="about" class="pub-section">
+    <div class="pub-container">
+      <div class="pub-header">
+        <span class="pub-kicker">Pedagogical Foundation</span>
+        <h2>Built for Genuine Mastery in Critical School Years</h2>
+        <p>Classes 6 through 10 form the cornerstone of every student’s academic trajectory. LearnFlex embodies the National Education Policy (NEP 2020) vision of formative, competency-based education.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrap">◎</div>
+          <h3>Competency Over Rote Memorisation</h3>
+          <p>Traditional tests assign a score and move on, leaving foundational gaps unaddressed. LearnFlex immediately catches errors and guides the student back to the prerequisite concept before advancing.</p>
+          <span class="feature-tag">NEP 2020 Aligned</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">⚑</div>
+          <h3>Deterministic & Hallucination-Free</h3>
+          <p>LearnFlex uses deterministic rules to select practice and explain learning-path decisions. Its original practice drafts are mapped to the chapter catalogue and require subject-teacher review.</p>
+          <span class="feature-tag">100% Reliable Content</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">🛡</div>
+          <h3>Child Data Privacy by Design</h3>
+          <p>Designed with privacy safeguards including role-scoped access, minimal demo data, and no behavioral advertising. Legal compliance and school deployment require further review.</p>
+          <span class="feature-tag">Privacy safeguards in development</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="pub-section">
+    <div class="pub-container">
+      <div class="pub-header">
+        <span class="pub-kicker">Comprehensive Capability</span>
+        <h2>Engineered for Deep Learning and Teacher Empowerment</h2>
+        <p>Explore the six core technical systems that transform LearnFlex into a genuinely functional edtech product.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrap">⚖</div>
+          <h3>4-Tier Adaptive Difficulty</h3>
+          <p>Seamlessly transitions across Foundation, Reinforcement, Standard, and Challenge question sets based on dual signals: answer accuracy and student confidence.</p>
+          <span class="feature-tag">Adaptive Algorithm</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">🔍</div>
+          <h3>Root-Gap Misconception Diagnosis</h3>
+          <p>Option-level error mapping uncovers *why* a student made a specific mistake, offering targeted visual explanations and an instant verification check.</p>
+          <span class="feature-tag">Cognitive Diagnostics</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">💡</div>
+          <h3>3-Tier Progressive Hints</h3>
+          <p>Optional, score-neutral scaffolding: Step 1 (Understand Task), Step 2 (Recall Concept), Step 3 (Worked Example) so students never get stuck.</p>
+          <span class="feature-tag">Guided Scaffolding</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">📶</div>
+          <h3>Offline-First PWA Architecture</h3>
+          <p>Download subject packs to IndexedDB storage. Practice uninterrupted in rural areas or during network drops; progress auto-syncs on reconnect.</p>
+          <span class="feature-tag">IndexedDB & Service Worker</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">♿</div>
+          <h3>Universal Accessibility & Trilingual UI</h3>
+          <p>Built-in High Contrast mode, Dyslexia-friendly typography, Large text scaling, Text-to-Speech (TTS) with speed control, and English, Telugu, & Hindi support.</p>
+          <span class="feature-tag">Inclusive Design</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-wrap">📊</div>
+          <h3>Class-Scoped Teacher Analytics</h3>
+          <p>Teachers monitor student rosters, identify class-wide misconception patterns, record paired pilot evidence, and export comprehensive CSV backups.</p>
+          <span class="feature-tag">Teacher Insights</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="pub-section">
+    <div class="pub-container">
+      <div class="pub-header">
+        <span class="pub-kicker">The Learning Cycle</span>
+        <h2>How LearnFlex Personalises Every Session</h2>
+        <p>A closed-loop adaptive cycle that turns diagnostic assessments into explainable learning breakthroughs.</p>
+      </div>
+      <div class="step-grid">
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <h3>Baseline Diagnostic</h3>
+          <p>New learners receive a balanced 3-question diagnostic across Foundation, Standard, and Challenge tiers to establish baseline ability.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <h3>Dual-Signal Capture</h3>
+          <p>Students submit their chosen answer along with self-reported confidence (High, Medium, Low), distinguishing guesses from true mastery.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <h3>Adaptive Routing</h3>
+          <p>Confident errors route immediately to Foundation review; uncertain answers route to Reinforcement; repeated success unlocks Challenge items.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <h3>Misconception Intervention</h3>
+          <p>Identifies the underlying mathematical or conceptual flaw, models a worked example, and tests a fresh follow-up verification question.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">5</div>
+          <h3>Real-Data Persistence</h3>
+          <p>Attempts are validated on the server, saved to persistent SQLite storage, and aggregated for class-scoped teacher dashboards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adaptive Engine Deep-Dive Section -->
+  <section id="adaptive-engine" class="pub-section">
+    <div class="pub-container">
+      <div class="pub-header">
+        <span class="pub-kicker">Explainable Intelligence</span>
+        <h2>The 4-Tier Adaptive Framework Explained</h2>
+        <p>Every adaptive decision made by LearnFlex is explainable, transparent, and pedagogically justified.</p>
+      </div>
+      <div class="tier-matrix">
+        <div class="tier-card tier-fnd">
+          <span class="tier-label">Tier 1 · Foundation</span>
+          <h3>Prerequisite Scaffolding</h3>
+          <p>Focuses on core definitions, visual fraction bars, number lines, and step-by-step prerequisite ideas when rolling accuracy falls below 60% or confident mistakes occur.</p>
+          <div class="tier-example">
+            <b>Example Focus:</b> In 3/5, visualising that 5 is the number of equal parts and 3 is the count of parts taken.
+          </div>
+        </div>
+        <div class="tier-card tier-reinf">
+          <span class="tier-label">Tier 2 · Reinforcement</span>
+          <h3>Guided Parallel Practice</h3>
+          <p>Delivered when a student answers correctly but reports low confidence, or after recovering from an error. Uses fresh parallel examples with structured support.</p>
+          <div class="tier-example">
+            <b>Example Focus:</b> Solving 2/7 + 3/7 with common denominator guidance before introducing unlike fractions.
+          </div>
+        </div>
+        <div class="tier-card tier-std">
+          <span class="tier-label">Tier 3 · Standard</span>
+          <h3>Grade-Level Benchmark</h3>
+          <p>The standard NCERT textbook curriculum level. Tests standard problem-solving procedures, chapter exercises, and typical CBSE examination patterns.</p>
+          <div class="tier-example">
+            <b>Example Focus:</b> Simplifying complex fractions and converting mixed fractions into improper fractions.
+          </div>
+        </div>
+        <div class="tier-card tier-chal">
+          <span class="tier-label">Tier 4 · Challenge</span>
+          <h3>High-Order Thinking (HOTS)</h3>
+          <p>Unlocked when students achieve ≥80% accuracy with consistent high confidence. Involves multi-step word problems, data interpretation, and real-world modelling.</p>
+          <div class="tier-example">
+            <b>Example Focus:</b> Multi-step rate problems dividing unequal parts across varied units.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CBSE Curriculum Explorer Section -->
+  <section id="curriculum" class="pub-section">
+    <div class="pub-container">
+      <div class="pub-header">
+        <span class="pub-kicker">Official Syllabus Alignment</span>
+        <h2>Explore the Complete CBSE Classes 6–10 Catalog</h2>
+        <p>Browse 528 chapter and activity modules across all CBSE subjects based on official 2026–27 NCERT textbook editions.</p>
+      </div>
+      <div class="curr-browser-wrap">
+        <div class="curr-controls">
+          <div class="curr-pills" id="publicClassPills">
+            <button class="curr-pill active" type="button" onclick="filterPublicCurriculum('Class 6', this)">Class 6</button>
+            <button class="curr-pill" type="button" onclick="filterPublicCurriculum('Class 7', this)">Class 7</button>
+            <button class="curr-pill" type="button" onclick="filterPublicCurriculum('Class 8', this)">Class 8</button>
+            <button class="curr-pill" type="button" onclick="filterPublicCurriculum('Class 9', this)">Class 9</button>
+            <button class="curr-pill" type="button" onclick="filterPublicCurriculum('Class 10', this)">Class 10</button>
+          </div>
+          <div class="curr-pills" id="publicSubjectPills">
+            <button class="curr-pill active" type="button" onclick="filterPublicSubject('All', this)">All Subjects</button>
+            <button class="curr-pill" type="button" onclick="filterPublicSubject('Mathematics', this)">Mathematics</button>
+            <button class="curr-pill" type="button" onclick="filterPublicSubject('Science', this)">Science</button>
+            <button class="curr-pill" type="button" onclick="filterPublicSubject('Social Studies', this)">Social Studies</button>
+            <button class="curr-pill" type="button" onclick="filterPublicSubject('English', this)">English</button>
+            <button class="curr-pill" type="button" onclick="filterPublicSubject('Hindi', this)">Hindi</button>
+            <button class="curr-pill" type="button" onclick="filterPublicSubject('Sanskrit', this)">Sanskrit</button>
+          </div>
+          <div class="curr-search-box">
+            <span>🔎</span>
+            <input type="text" id="publicChapterSearch" placeholder="Search chapters, e.g. Fractions, Light, Motion..." oninput="searchPublicChapters(this.value)">
+          </div>
+        </div>
+        <div class="curr-grid" id="publicCurriculumGrid">
+          <!-- Dynamically populated from curriculum.js + ncert-curriculum.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="pub-section">
+    <div class="pub-container">
+      <div class="pub-header">
+        <span class="pub-kicker">Stakeholder Value</span>
+        <h2>Why Students and Educators Choose LearnFlex</h2>
+        <p>Designed to reduce academic anxiety for students and streamline formative assessment workflows for teachers.</p>
+      </div>
+      <div class="benefit-grid">
+        <div class="benefit-card">
+          <div class="benefit-head">
+            <div class="role-icon">▤</div>
+            <div>
+              <span class="pub-kicker">For Students</span>
+              <h3>Confident, Anxiety-Free Learning</h3>
+            </div>
+          </div>
+          <ul class="benefit-list">
+            <li><strong>Learn at your own pace:</strong> Never feel rushed or left behind by uniform classroom pacing.</li>
+            <li><strong>Score-neutral progressive hints:</strong> Try hints without fear of penalty to solve difficult problems.</li>
+            <li><strong>Misconception explanations:</strong> Understand exactly where reasoning went off track.</li>
+            <li><strong>Smart Recovery checkpoints:</strong> Turn weak topics into strengths with dedicated recovery missions.</li>
+            <li><strong>Study anywhere offline:</strong> Download chapter packs and practice even with zero connectivity.</li>
+          </ul>
+        </div>
+        <div class="benefit-card for-teachers">
+          <div class="benefit-head">
+            <div class="role-icon">✎</div>
+            <div>
+              <span class="pub-kicker">For Teachers</span>
+              <h3>Actionable Diagnostic Insights</h3>
+            </div>
+          </div>
+          <ul class="benefit-list">
+            <li><strong>Class-scoped roster monitoring:</strong> Instant view of student completion and mastery levels in your class.</li>
+            <li><strong>Automated error pattern aggregation:</strong> Discover common class-wide misconceptions before unit exams.</li>
+            <li><strong>Zero manual grading overhead:</strong> Daily formative checks are evaluated instantly on the server.</li>
+            <li><strong>Consent-gated pilot evidence:</strong> Record paired baseline vs post score improvements for research.</li>
+            <li><strong>One-click CSV data export:</strong> Export class records safely for school reporting and parent meetings.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions (FAQ) - AEO Section -->
+  <section id="faq" class="pub-section">
+    <div class="pub-container">
+      <div class="pub-header">
+        <span class="pub-kicker">Direct Answers</span>
+        <h2>Frequently Asked Questions</h2>
+        <p>Clear, direct answers to common questions about LearnFlex, adaptive learning, and data privacy.</p>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item open">
+          <button class="faq-question" type="button" onclick="toggleFaq(this)">
+            <span>What is adaptive learning in LearnFlex?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Adaptive learning in LearnFlex dynamically adjusts question difficulty between Foundation, Reinforcement, Standard, and Challenge tiers using a student's real-time answer accuracy and reported confidence level. It rebuilds prerequisites when errors occur and increases challenge when concepts are mastered.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" onclick="toggleFaq(this)">
+            <span>Which CBSE classes and subjects are covered?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>LearnFlex provides a CBSE/NCERT-aligned catalogue of 528 chapter and activity modules across Classes 6–10. Subject and language offerings vary by class and school. Arts, Physical Education and Vocational entries are activity modules rather than numbered textbook chapters; curriculum alignment and original practice content require educator review.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" onclick="toggleFaq(this)">
+            <span>How does the system decide when to change question difficulty?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>The adaptive engine evaluates both correctness and confidence. Confident incorrect answers immediately route to Foundation scaffolding to address misconceptions. Correct answers with low confidence route to Reinforcement practice. Two consecutive confident correct answers promote the learner to Challenge-tier questions.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" onclick="toggleFaq(this)">
+            <span>How are student misconceptions identified?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Some practice questions include option-level feedback and a separate follow-up check. Feedback is a hypothesis to explore with the learner, not a definitive diagnosis; generated practice content requires educator review.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" onclick="toggleFaq(this)">
+            <span>Does LearnFlex work offline or on poor internet connections?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>LearnFlex includes PWA caching, downloadable IndexedDB learning packs and an offline progress outbox with reconnect synchronization. Offline use depends on a successful first load, browser support and previously downloaded content. Physical-device and real-network verification is still required before a school pilot.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" onclick="toggleFaq(this)">
+            <span>Is student data private and protected?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>LearnFlex includes role-based access controls, class/school/section scoping for teacher views, and a student account deletion endpoint. This demonstration is not a legal certification of DPDP Act compliance; schools must review consent, retention, security, and deployment requirements before using real student data.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" onclick="toggleFaq(this)">
+            <span>Does the platform use generative AI or external LLMs?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>No. LearnFlex deliberately operates without generative AI services (such as OpenAI, ChatGPT, or Claude) in its adaptive loop. Adaptive routing is deterministic and rule-based, with no external generative-AI dependency. Practice content includes original generated drafts and must be reviewed by subject educators; deterministic routing does not guarantee content accuracy.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" type="button" onclick="toggleFaq(this)">
+            <span>How do teachers monitor student progress?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Provisioned teachers can view assessment records for learners in their assigned class, school, and section, and can record consent-gated pilot evidence in the demo environment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Support Section -->
+  <section id="contact" class="pub-section">
+    <div class="pub-container">
+      <div class="pub-header">
+        <span class="pub-kicker">Get In Touch</span>
+        <h2>Contact & School Support</h2>
+        <p>Have questions about curriculum mapping, school deployment, or academic pilot partnerships? Reach out to our team.</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-form-card">
+          <form id="publicContactForm" onsubmit="handlePublicContact(event)">
+            <div class="field">
+              <label for="contactName">Your Name</label>
+              <input id="contactName" type="text" placeholder="e.g. Ramesh Gupta" required>
+            </div>
+            <div class="field">
+              <label for="contactEmail">Email Address</label>
+              <input id="contactEmail" type="email" placeholder="e.g. ramesh@school.edu.in" required>
+            </div>
+            <div class="field">
+              <label for="contactSubject">Subject / Inquiring Role</label>
+              <select id="contactSubject" required>
+                <option value="School Pilot Inquiry">CBSE School Pilot Inquiry</option>
+                <option value="Teacher Feedback">Teacher / Educator Feedback</option>
+                <option value="Curriculum Mapping">Curriculum & Question Review</option>
+                <option value="Technical Support">Technical & Offline PWA Support</option>
+                <option value="Other">Other Inquiry</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" placeholder="Tell us how we can help your school or students..." required></textarea>
+            </div>
+            <button class="btn primary full" type="submit" id="contactSubmitBtn">Send Message <span>→</span></button>
+            <div id="contactStatus" style="margin-top:12px;font-size:11px;display:none"></div>
+          </form>
+        </div>
+        <div class="contact-info-card">
+          <h3>Academic Support & Pilot Contact</h3>
+          <div class="contact-detail-row">
+            <div class="contact-icon">📍</div>
+            <div>
+              <b>Educational Resource Center</b>
+              <p>LearnFlex Project · India</p>
+            </div>
+          </div>
+          <div class="contact-detail-row">
+            <div class="contact-icon">✉</div>
+            <div>
+              <b>Direct Email Support</b>
+              <p>Use the contact form on this page.</p>
+            </div>
+          </div>
+          <div class="contact-detail-row">
+            <div class="contact-icon">⏱</div>
+            <div>
+              <b>Support Hours</b>
+              <p>Monday – Saturday: 9:00 AM to 6:00 PM IST</p>
+            </div>
+          </div>
+          <div class="contact-detail-row">
+            <div class="contact-icon">✦</div>
+            <div>
+              <b>Privacy and data requests</b>
+              <p>Use the contact form. A designated grievance contact must be confirmed before a live school deployment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy Policy Section -->
+  <section id="privacy" class="pub-section">
+    <div class="pub-container">
+      <div class="pub-header">
+        <span class="pub-kicker">Data Protection</span>
+        <h2>Privacy Policy & Child Safety Statement</h2>
+        <p>Privacy and child-safety overview for this demonstration. A school/legal review is required before real student deployment.</p>
+      </div>
+      <div class="policy-card">
+        <h3>1. Purpose & Scope</h3>
+        <p>LearnFlex is dedicated to educational formative assessment for CBSE students in Classes 6 to 10. We process only minimal, necessary learning performance information required to calculate question difficulty and generate pedagogical recommendations.</p>
+        
+        <h4>2. Collection of Student Data</h4>
+        <p>The platform stores student roll numbers/IDs, class designations, question attempts, answer selections, self-reported confidence, and timestamps. We do not collect government identity cards, biometric data, precise GPS coordinates, contact phone numbers, or financial information.</p>
+        
+        <h4>3. Local-First Storage & Offline Priority</h4>
+        <p>All learning history is initially recorded in the learner's own browser storage (IndexedDB and localStorage). When synchronizing with the backend server, data is transmitted over encrypted TLS connections directly to the designated school server.</p>
+        
+        <h4>4. Role-Scoped Teacher Authorization</h4>
+        <p>A teacher is authorized to access assessment records *only* for students in their assigned class and school. Cross-class and cross-school student data inspection is prohibited and blocked by server-side scoping algorithms.</p>
+        
+        <h4>5. Right to Erasure & Deletion</h4>
+        <p>The student profile provides a <code>DELETE /api/account</code> endpoint to remove the account and associated learning records held by this demo backend. Retained security logs are redacted; browser copies on other devices and backups may require separate handling. This is an application feature description, not legal advice or a certification of statutory compliance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terms and Conditions Section -->
+  <section id="terms" class="pub-section">
+    <div class="pub-container">
+      <div class="pub-header">
+        <span class="pub-kicker">Academic Use</span>
+        <h2>Terms & Conditions</h2>
+        <p>Usage agreement for students, educators, and participating schools.</p>
+      </div>
+      <div class="policy-card">
+        <h3>Academic Demonstration & Pilot License</h3>
+        <p>LearnFlex is made available for classroom formative practice, school pilot trials, and educational demonstrations. The practice questions are original teaching drafts mapped to NCERT chapters; they do not represent official CBSE board examination papers.</p>
+        
+        <h4>Educator Validation Required</h4>
+        <p>Participating schools and subject teachers must review curriculum combinations, textbook edition alignments, and local elective subjects before formal classroom adoption. No medical, psychological, or clinical diagnostic claim is made by the platform's misconception identification algorithms.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Public Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="#home">
+            <span class="brand-mark">L</span>
+            <span>learn<span class="brand-accent">flex</span></span>
+          </a>
+          <p>Personalised, explainable adaptive learning and formative assessment for CBSE Classes 6–10. Designed with care for Indian students and educators.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#about" onclick="showPublicSection('about')">About Us</a></li>
+            <li><a href="#features" onclick="showPublicSection('features')">Key Features</a></li>
+            <li><a href="#how-it-works" onclick="showPublicSection('how-it-works')">How It Works</a></li>
+            <li><a href="#adaptive-engine" onclick="showPublicSection('adaptive-engine')">Adaptive Engine</a></li>
+            <li><a href="#curriculum" onclick="showPublicSection('curriculum')">CBSE Curriculum</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Portals</h4>
+          <ul>
+            <li><a href="#" onclick="openPublicRole('student')">Student Sign In</a></li>
+            <li><a href="#" onclick="openPublicRole('teacher')">Teacher Sign In</a></li>
+            <li><a href="#" onclick="openPublicRegister()">New User Registration</a></li>
+            <li><a href="llms.txt" target="_blank">llms.txt (AI Spec)</a></li>
+            <li><a href="sitemap.xml" target="_blank">sitemap.xml</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal & Safety</h4>
+          <ul>
+            <li><a href="#privacy" onclick="showPublicSection('privacy')">Privacy Policy</a></li>
+            <li><a href="#terms" onclick="showPublicSection('terms')">Terms of Service</a></li>
+            <li><a href="#contact" onclick="showPublicSection('contact')">Contact & Support</a></li>
+            <li><a href="docs/PILOT-AND-PRIVACY.md" target="_blank">Pilot & Consent Docs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 LearnFlex · All rights reserved · NCERT / CBSE curriculum referenced for academic practice.</div>
+        <div>No external generative-AI dependency · Offline learning packs · Privacy review required before live use</div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ========================================================================
+     ROLE SELECTION VIEW (For Students and Teachers)
+     ======================================================================== -->
+<section id="roleView" class="role-screen hidden">
+  <div class="role-top">
+    <a class="brand" href="#" onclick="showPublicPortal()"><span class="brand-mark">L</span><span>learn<span class="brand-accent">flex</span></span></a>
+    <button class="btn ghost small" type="button" onclick="showPublicPortal()">← Back to Website</button>
+  </div>
+  <div class="role-content">
+    <div class="role-eyebrow"><span class="pulse"></span> YOUR LEARNING SPACE</div>
+    <h1>Welcome to <em>LearnFlex.</em></h1>
+    <p class="role-lead">Your learning journey, your pace. Choose how you’d like to continue.</p>
+    <div class="role-cards">
+      <button class="role-card student-role" id="chooseStudent" type="button">
+        <span class="role-icon">▤</span><span class="role-card-label">FOR LEARNERS</span>
+        <strong>I’m a Student</strong><span class="role-description">Explore lessons, practise questions, and track your progress at your own pace.</span>
+        <span class="role-cta">Continue as Student <span>→</span></span>
+      </button>
+      <button class="role-card teacher-role" id="chooseTeacher" type="button">
+        <span class="role-icon">✎</span><span class="role-card-label">FOR EDUCATORS</span>
+        <strong>I’m a Teacher</strong><span class="role-description">Monitor student progress, identify learning gaps, and support your class.</span>
+        <span class="role-cta">Continue as Teacher <span>→</span></span>
+      </button>
+    </div>
+    <div class="role-footnote"><span>✦</span> One platform. A learning path for everyone.</div>
+  </div>
+</section>
+
+<!-- ========================================================================
+     AUTHENTICATION & REGISTRATION VIEW
+     ======================================================================== -->
+<section id="authView" class="auth-layout hidden">
+  <div class="auth-brand">
+    <a class="brand" href="#" onclick="showPublicPortal()"><span class="brand-mark">L</span><span>learn<span class="brand-accent">flex</span></span></a>
+    <div class="hero-copy"><div class="eyebrow"><span class="pulse"></span> A little more personal</div>
+      <h1>Learning that<br><em>moves with you.</em></h1>
+      <p>Find your gaps, build your basics, and grow one small win at a time.</p>
+      <div class="hero-note"><div class="note-icon">✦</div><div><b>Your pace. Your path.</b><span>Built for curious minds in Classes 6–10.</span></div></div>
+    </div>
+    <div class="auth-footer">A calmer way to learn · Made for every learner</div>
+  </div>
+  <div class="auth-panel">
+    <div class="auth-top">
+      <button class="back-role" type="button" onclick="showPublicPortal()" style="margin-right:15px">🌐 Website</button>
+      <button class="back-role" id="backToRoles" type="button">← Change role</button>
+    </div>
+    <div class="auth-card">
+      <div class="auth-mode-toggle">
+        <button class="auth-mode-btn active" id="authModeSignInBtn" type="button" onclick="setAuthMode('login')">Sign In</button>
+        <button class="auth-mode-btn" id="authModeRegisterBtn" type="button" onclick="setAuthMode('register')">Register New Account</button>
+      </div>
+
+      <!-- Sign In Form -->
+      <div id="loginFormContainer">
+        <h2 id="authTitle">Welcome back 👋</h2><p id="authSubtitle" class="muted">Pick up where you left off.</p>
+        <form id="loginForm">
+          <label for="loginId" id="idLabel">Roll number</label><input id="loginId" autocomplete="username" placeholder="Enter your roll number" required>
+          <label for="loginPassword">Password</label>
+          <div class="password-wrap">
+            <input id="loginPassword" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+            <button type="button" id="togglePassword" class="eye" aria-label="Show password">◉</button>
+          </div>
+          <button class="btn primary full" type="submit">Enter my space <span>→</span></button>
+        </form>
+      </div>
+
+      <!-- Registration Form -->
+      <div id="registerFormContainer" class="hidden">
+        <h2>Join LearnFlex</h2>
+        <p class="muted">Create your authenticated learning account.</p>
+        <form id="registerForm" onsubmit="handleRegistration(event)">
+          <label for="regName">Full Name</label>
+          <input id="regName" type="text" placeholder="e.g. Ananya Sharma" required>
+          
+          <label for="regRole">Role</label>
+          <p class="muted">Teacher accounts are created by an authorized school administrator. Public self-registration is for students.</p>
+          <select id="regRole" onchange="handleRegRoleChange(this.value)">
+            <option value="student">Student (Learner)</option>
+          </select>
+
+          <label for="regInviteCode">School invitation code</label>
+          <input id="regInviteCode" type="text" placeholder="Enter the code provided by your school" autocomplete="off" required>
+          <p class="muted">Your school invitation assigns your verified school, class and section. You cannot choose these details yourself.</p>
+          <label for="regClass">CBSE Class (assigned by invitation)</label>
+          <select id="regClass" required disabled>
+            <option value="Class 6">Class 6</option>
+            <option value="Class 7">Class 7</option>
+            <option value="Class 8">Class 8</option>
+            <option value="Class 9">Class 9</option>
+            <option value="Class 10">Class 10</option>
+          </select>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+            <div>
+              <label for="regSection">Section</label>
+              <input id="regSection" type="text" placeholder="Assigned by school" value="" disabled>
+            </div>
+            <div>
+              <label for="regCustomId">Custom ID (Optional)</label>
+              <input id="regCustomId" type="text" placeholder="Leave blank to auto-generate">
+            </div>
+          </div>
+
+          <label for="regSchool">School Name</label>
+          <input id="regSchool" type="text" placeholder="Assigned by school" value="" disabled>
+
+          <label for="regPassword">Create Password</label>
+          <div class="password-wrap">
+            <input id="regPassword" type="password" placeholder="Min. 6 characters" minlength="6" required>
+            <button type="button" id="toggleRegPassword" class="eye" onclick="togglePasswordVisibility('regPassword')" aria-label="Show password">◉</button>
+          </div>
+
+          <button class="btn primary full" type="submit" id="regSubmitBtn">Create Account &amp; Start <span>→</span></button>
+        </form>
+      </div>
+
+      <p class="auth-disclaimer">Local-first persistent storage · Privacy safeguards for demo use; school and legal review required before live deployment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================================
+     AUTHENTICATED APP SHELL VIEW
+     ======================================================================== -->
+<div id="appView" class="app-shell hidden">
+  <aside class="sidebar">
+    <a class="brand side-brand" href="#" onclick="showPublicPortal()"><span class="brand-mark">L</span><span>learn<span class="brand-accent">flex</span></span></a>
+    <div class="workspace-label">YOUR WORKSPACE</div>
+    <nav id="sideNav"></nav>
+    <div class="sidebar-bottom">
+      <div class="help-card"><span class="help-spark">✦</span><b>Small steps count.</b><p>Every question helps us understand how you learn.</p></div>
+      <button class="profile-mini" id="profileButton"><span class="avatar" id="sideAvatar">S</span><span><b id="sideName">Student</b><small id="sideRole">Student account</small></span><span class="dots">···</span></button>
+    </div>
+  </aside>
+  <main class="main-area">
+    <header class="topbar">
+      <div>
+        <div class="breadcrumb">LearnFlex <span>/</span> <b id="pageCrumb">Overview</b></div>
+        <h2 id="pageTitle">Good morning </h2>
+      </div>
+      <div class="top-actions">
+        <button class="btn ghost small" type="button" onclick="showPublicPortal()" title="Explore public website" style="padding:6px 10px;font-size:11px">🌐 Website</button>
+        <label class="language-select"><span>文</span><select id="languageSelect" aria-label="Choose language"><option value="en">English</option><option value="te">తెలుగు</option><option value="hi">हिन्दी</option></select></label>
+        <label class="speech-rate-label" title="Read-aloud speed">Speed <select id="speechRateSelect" aria-label="Read-aloud speed"><option value="0.75">Slow</option><option value="0.9" selected>Normal</option><option value="1.15">Fast</option></select></label>
+        <button class="access-btn" id="readAloudBtn" type="button" title="Read page aloud">🔊 Read</button>
+        <button class="access-btn" id="contrastBtn" type="button" aria-pressed="false">◐ Contrast</button>
+        <button class="access-btn" id="dyslexiaBtn" type="button" aria-pressed="false">Aa Reading</button>
+        <button class="access-btn" id="largeTextBtn" type="button" aria-pressed="false" title="Increase text size">A+ Text</button>
+        <span class="offline-status compact" id="globalConnectionBadge" aria-live="polite">● Checking connection…</span>
+        <button class="icon-btn" id="topProfile" title="Profile">☻</button>
+      </div>
+    </header>
+    <div id="pageContent" class="page-content"></div>
+    <footer class="app-footer">LearnFlex <span>·</span> Learn a little. Grow a lot. · CBSE 2026–27</footer>
+  </main>
+</div>
+<div id="modalRoot"></div>
+
+<!-- JavaScript modules -->
+<script src="curriculum.js"></script>
+<script src="ncert-curriculum.js"></script>
+<script src="adaptive-engine.js"></script>
+<script src="app.js"></script>
+<script src="app-enhancements.js"></script>
+<script src="quality-upgrades.js"></script>
+<script src="offline-manager.js"></script>
+
+<script>
+/* ==========================================================================
+   PUBLIC WEBSITE & AUTHENTICATION INTEGRATION SCRIPT
+   ========================================================================== */
+let publicCurrentClass = 'Class 6';
+let publicCurrentSubject = 'All';
+
+function showPublicPortal() {
+  $('#publicView').classList.remove('hidden');
+  $('#roleView').classList.add('hidden');
+  $('#authView').classList.add('hidden');
+  $('#appView').classList.add('hidden');
+  renderPublicCurriculum();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function showPublicSection(sectionId) {
+  showPublicPortal();
+  const el = document.getElementById(sectionId);
+  if (el) el.scrollIntoView({ behavior: 'smooth' });
+}
+
+function openPublicRole(role) {
+  $('#publicView').classList.add('hidden');
+  $('#roleView').classList.add('hidden');
+  $('#appView').classList.add('hidden');
+  $('#authView').classList.remove('hidden');
+  setRole(role);
+  setAuthMode('login');
+  if (typeof updateDemoCredentialsHelper === 'function') updateDemoCredentialsHelper();
+}
+
+function openPublicRegister() {
+  $('#publicView').classList.add('hidden');
+  $('#roleView').classList.add('hidden');
+  $('#appView').classList.add('hidden');
+  $('#authView').classList.remove('hidden');
+  setRole('student');
+  setAuthMode('register');
+}
+
+function setAuthMode(mode) {
+  if (mode === 'register') {
+    $('#loginFormContainer').classList.add('hidden');
+    $('#registerFormContainer').classList.remove('hidden');
+    $('#authModeSignInBtn').classList.remove('active');
+    $('#authModeRegisterBtn').classList.add('active');
+  } else {
+    $('#registerFormContainer').classList.add('hidden');
+    $('#loginFormContainer').classList.remove('hidden');
+    $('#authModeRegisterBtn').classList.remove('active');
+    $('#authModeSignInBtn').classList.add('active');
+  }
+}
+
+function handleRegRoleChange(val) {
+  if (val === 'teacher') {
+    $('#regClass').parentElement.querySelector('label[for="regClass"]').textContent = 'Assigned CBSE Class';
+  } else {
+    $('#regClass').parentElement.querySelector('label[for="regClass"]').textContent = 'CBSE Class';
+  }
+}
+
+function togglePasswordVisibility(fieldId) {
+  const el = document.getElementById(fieldId);
+  if (el) el.type = el.type === 'password' ? 'text' : 'password';
+}
+
+function toggleMobileNav() {
+  $('#publicNavMenu').classList.toggle('open');
+}
+
+function toggleFaq(btn) {
+  const item = btn.closest('.faq-item');
+  if (item) item.classList.toggle('open');
+}
+
+function filterPublicCurriculum(className, btn) {
+  publicCurrentClass = className;
+  document.querySelectorAll('#publicClassPills .curr-pill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderPublicCurriculum();
+}
+
+function filterPublicSubject(subj, btn) {
+  publicCurrentSubject = subj;
+  document.querySelectorAll('#publicSubjectPills .curr-pill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderPublicCurriculum();
+}
+
+function searchPublicChapters(term) {
+  renderPublicCurriculum(term);
+}
+
+function renderPublicCurriculum(filterTerm = '') {
+  const grid = document.getElementById('publicCurriculumGrid');
+  if (!grid) return;
+  const topics = (window.LEARNFLEX_CURRICULUM && window.LEARNFLEX_CURRICULUM.topics) || [];
+  let matches = topics.filter(t => t.className === publicCurrentClass);
+  if (publicCurrentSubject !== 'All') {
+    matches = matches.filter(t => t.subject === publicCurrentSubject);
+  }
+  if (filterTerm && filterTerm.trim()) {
+    const q = filterTerm.trim().toLowerCase();
+    matches = matches.filter(t => t.title.toLowerCase().includes(q) || t.subject.toLowerCase().includes(q) || (t.lesson && t.lesson.toLowerCase().includes(q)));
+  }
+  if (!matches.length) {
+    grid.innerHTML = '<div style="grid-column:1/-1;text-align:center;padding:40px;color:#809085">No chapters match your filter criteria. Try choosing another subject or clearing your search.</div>';
+    return;
+  }
+  grid.innerHTML = matches.slice(0, 30).map(t => `
+    <div class="curr-card">
+      <div class="curr-card-top">
+        <span class="curr-badge">${escapeHTML(t.subject)}</span>
+        <span style="font-size:10px;color:#89978e;font-weight:700">Ch. ${t.chapterNumber || '•'}</span>
+      </div>
+      <h4>${escapeHTML(t.title)}</h4>
+      <p>${escapeHTML(t.lesson ? t.lesson.slice(0, 110) + '…' : 'NCERT chapter practice module.')}</p>
+      <div class="curr-card-footer">
+        <span>20 adaptive questions</span>
+        <button class="link-btn" type="button" onclick="openPublicRole('student')">Practice →</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+async function handlePublicContact(e) {
+  e.preventDefault();
+  const name = $('#contactName').value.trim();
+  const email = $('#contactEmail').value.trim();
+  const subject = $('#contactSubject').value;
+  const message = $('#contactMessage').value.trim();
+  const statusEl = $('#contactStatus');
+  const btn = $('#contactSubmitBtn');
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
+  try {
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, subject, message })
+    });
+    const data = await res.json();
+    if (res.ok) {
+      statusEl.style.display = 'block';
+      statusEl.style.color = '#236b55';
+      statusEl.textContent = '✓ ' + (data.message || 'Thank you! Your message has been sent successfully.');
+      $('#publicContactForm').reset();
+    } else {
+      statusEl.style.display = 'block';
+      statusEl.style.color = '#b84435';
+      statusEl.textContent = '⚠ ' + (data.error || 'Failed to send message. Please try again.');
+    }
+  } catch (err) {
+    statusEl.style.display = 'block';
+    statusEl.style.color = '#236b55';
+    statusEl.textContent = '✓ Your inquiry has been queued locally. Thank you for connecting!';
+    $('#publicContactForm').reset();
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = 'Send Message <span>→</span>';
+  }
+}
+
+async function handleRegistration(e) {
+  e.preventDefault();
+  const name = $('#regName').value.trim();
+  const role = $('#regRole').value;
+  const className = $('#regClass').value;
+  const section = $('#regSection').value.trim() || 'A';
+  const customId = $('#regCustomId').value.trim();
+  const school = $('#regSchool').value.trim();
+  const inviteCode = $('#regInviteCode').value.trim();
+  const password = $('#regPassword').value;
+  const btn = $('#regSubmitBtn');
+  btn.disabled = true;
+  btn.textContent = 'Creating account…';
+  try {
+    const res = await fetch('/api/auth/register', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, role, inviteCode, password, id: customId || undefined })
+    });
+    const data = await res.json();
+    if (!res.ok) {
+      toast(data.error || 'Registration failed.');
+      btn.disabled = false;
+      btn.innerHTML = 'Create Account &amp; Start <span>→</span>';
+      return;
+    }
+    sessionStorage.setItem('learnflex_access_token', data.token);
+    sessionStorage.setItem('learnflex_access_user', data.user.id);
+    if (window.learnFlexRememberOfflineLogin) await window.learnFlexRememberOfflineLogin(password, data.user).catch(() => {});
+    currentUser = data.user;
+    if (!db.users.find(u => u.id === currentUser.id)) {
+      db.users.push({ ...currentUser });
+    }
+    saveDB();
+    currentPage = 'overview';
+    $('#publicView').classList.add('hidden');
+    $('#roleView').classList.add('hidden');
+    $('#authView').classList.add('hidden');
+    $('#appView').classList.remove('hidden');
+    renderShell();
+    renderPage();
+    toast(`Welcome to LearnFlex, ${currentUser.name.split(' ')[0]}!`);
+  } catch (err) {
+    toast('Registration requires a connection to the LearnFlex server. No local account was created.');
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = 'Create Account &amp; Start <span>→</span>';
+  }
+}
+
+// Initialise public curriculum catalog once script is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  renderPublicCurriculum();
+});
+</script>
+</body>
+</html>

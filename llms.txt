@@ -1,0 +1,53 @@
+# LearnFlex — Machine-Readable Platform Description
+
+Canonical URL: https://learnflex.onrender.com/
+Project name: LearnFlex
+Target curriculum: CBSE (Central Board of Secondary Education, India), Classes 6–10, with NCERT textbook chapter catalogues where represented
+
+## Platform summary
+LearnFlex is a demonstration adaptive-learning and formative-practice platform for CBSE Classes 6–10. It uses deterministic, explainable rules to select practice tiers from recent correctness and learner-reported confidence. It does not depend on an external generative-AI API.
+
+## Curriculum catalogue
+- 528 chapter and curricular activity modules are included in the current generated catalogue.
+- Subjects include Mathematics, Science, Social Studies, English, Hindi, Sanskrit, Arts Education, Physical Education and Well-being, Vocational Education, and the Class 9 Individuals in Society modules.
+- Arts, PE, Vocational and other explicitly identified curricular modules are activities, not necessarily textbook chapters.
+- The catalogue maps chapter titles and includes original generated lesson summaries and practice drafts. These are not official NCERT questions and require subject-teacher review.
+- Class/subject offerings and textbook editions must be checked against each school's prescribed course.
+
+## Core Pedagogical & Adaptive Architecture
+
+### Four-Tier Difficulty Framework
+- Foundation: foundational review and easier concept checks.
+- Reinforcement: guided practice for correct-but-uncertain responses and repeated errors.
+- Standard: grade-level practice drafts.
+- Challenge: higher-order application drafts.
+
+## Adaptive learning
+- Four practice tiers are represented: Foundation, Reinforcement, Standard and Challenge.
+- Selection uses correctness and self-reported confidence. The primary assessment can append further questions based on recent responses.
+- Option feedback is available for mapped answer choices. It is a prompt for discussion, not a clinical or definitive diagnosis.
+- Explicit prerequisite links are supplied for a limited set of selected Mathematics and Science concept sequences. This is not a complete prerequisite graph for all modules.
+
+## Offline support
+- The application shell and selected lesson/question packs can be cached for offline access after download.
+- Learning changes can be saved locally and queued for later synchronization when a valid authenticated server session is available.
+- Full offline behavior depends on prior download, browser storage, and service-worker support. Not every server function is available offline.
+
+## Privacy and security safeguards
+- Public registration is restricted to student accounts; teacher accounts must be provisioned by an authorized operator.
+- Teacher access is scoped by class, school and section on the backend.
+- Passwords are hashed on the server; browser storage does not retain plaintext passwords. Session bearer tokens are kept in session storage.
+- This demonstration is not a legal certification of compliance with the DPDP Act or any other privacy law. A school/legal/security review is required before real student data is used.
+- Do not enter real student data in the public demonstration.
+
+## Runtime and architecture
+- Backend: Node.js 22.5+ with built-in HTTP server and `node:sqlite`; atomic JSON fallback is available.
+- Frontend: vanilla JavaScript, CSS and HTML.
+- Offline persistence: IndexedDB packs and an outbox; the app also keeps a compact local progress snapshot.
+- Tests cover syntax, backend API contracts, adaptive routing contracts and source-level offline contracts. Browser-based end-to-end testing requires a compatible browser runtime and must be reported separately.
+
+## Limitations
+- Generated practice questions and lesson summaries require educator validation.
+- Prerequisite coverage is partial.
+- Offline behavior should be verified in the target browser/device before claiming full offline operation.
+- SEO metadata and machine-readable descriptions do not guarantee search ranking or AI-search inclusion.

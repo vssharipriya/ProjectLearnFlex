@@ -1,0 +1,10 @@
+node_modules/
+.env
+.env.*
+!.env.example
+data/learnflex.sqlite
+data/learnflex.sqlite-wal
+data/learnflex.sqlite-shm
+data/state.json
+data/*.tmp
+*.log

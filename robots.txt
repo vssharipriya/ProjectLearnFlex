@@ -1,0 +1,15 @@
+# robots.txt for LearnFlex (CBSE Adaptive Learning Platform)
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /sitemap.xml
+Allow: /llms.txt
+Allow: /assets/
+Disallow: /data/
+Disallow: /api/backup
+Disallow: /api/audit
+Disallow: /api/state
+
+# Host & Sitemap
+Sitemap: https://learnflex.onrender.com/sitemap.xml
+Host: https://learnflex.onrender.com
