@@ -107,7 +107,7 @@ Not every curriculum item has a fully reviewed translation. Translated drafts re
 - Follow-up outcomes.
 - Real-attempt summaries.
 - CSV evidence export.
-- Synthetic demo records excluded from pilot evidence.
+- Synthetic records excluded from pilot evidence.
 
 ###  10. Public Educational Website & Search Optimization (Round 3)
 
@@ -118,9 +118,9 @@ Not every curriculum item has a fully reviewed translation. Translated drafts re
 - **School-verified Registration:** Student registration requires a school-issued invitation code; the server assigns school, class and section from administrator configuration. Teacher accounts are provisioned from trusted seed/operator configuration. Server-side scrypt password hashing, bearer-token authentication, and class/school/section scoping.
 - **Explainable Mastery & Weakness Identification:** Transparent mastery indices (Novice, Developing, Proficient, Mastery) and targeted recovery queues for chapters with scores below 70%.
 
-###  11. Demo and Walkthrough
+###  11. Walkthrough
 
-The project includes demo accounts and a step-by-step walkthrough for exploring student and teacher experiences.
+The project includes accounts and a step-by-step walkthrough for exploring student and teacher experiences.
 
 Refer to:
 
@@ -342,7 +342,7 @@ If you would like to contribute:
 
 ## Hosted deployment configuration
 
-No teacher password is published in the repository. Production startup requires the administrator to configure `LEARNFLEX_DEMO_TEACHER_PASSWORD` (16+ characters) in the hosting secret manager. Student self-registration requires an administrator-managed invitation in `LEARNFLEX_STUDENT_INVITES`; the server assigns school/class/section from that invitation. See `docs/DEPLOYMENT.md`. Confirm that the canonical URL in `index.html`, `robots.txt`, `sitemap.xml`, and `llms.txt` matches the actual deployed domain before publishing.
+No teacher password is published in the repository. Production startup requires the administrator to configure `LEARNFLEX_TEACHER_PASSWORD` (16+ characters) in the hosting secret manager. Student self-registration requires an administrator-managed invitation in `LEARNFLEX_STUDENT_INVITES`; the server assigns school/class/section from that invitation. See `docs/DEPLOYMENT.md`. Confirm that the canonical URL in `index.html`, `robots.txt`, `sitemap.xml`, and `llms.txt` matches the actual deployed domain before publishing.
 
 ## License
 
